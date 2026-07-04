@@ -1417,3 +1417,16 @@ section, nav, footer { position: relative; z-index: 1; }
   .project-card { flex: 0 0 100%; }
   .stat-card { padding: 12px 16px; min-width: 100px; }
 }
+/* Mobile devices ke liye fix */
+@media (max-width: 768px) {
+    .education-container, .experience-container {
+        margin-bottom: 20px !important; /* Cards ke beech mein thoda gap de dega */
+        width: 95% !important;         /* Screen width ke hisaab se fit ho jayega */
+        padding: 15px !important;      /* Text cut na ho isliye padding */
+    }
+
+    /* Agar card ka height fixed hai, toh use 'auto' kar do */
+    .card {
+        height: auto !important; 
+    }
+}
